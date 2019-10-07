@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Visite{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+        {% endblock %}
+    </head>
+    <h1>Votre Visite à été ajouter :)</h1>
+    <body>
+        <a href="/newVisite">Retour
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
